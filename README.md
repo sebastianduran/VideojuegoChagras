@@ -29,4 +29,4 @@ Run the following commands in your working directory:
 
 `node completeApp.js` runs the application in localhost
 
-![alt tag](https://user-images.githubusercontent.com/11578999/39667207-849d5200-5065-11e8-98b8-d67c2dddfb8c.png)
+![alt tag](https://raw.githubusercontent.com/sebastianduran/VideojuegoChagras/main/client/imgs/chagras.png)
