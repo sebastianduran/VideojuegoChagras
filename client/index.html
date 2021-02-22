@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <title>Chagras</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="../app.js"></script>
+  <link rel="stylesheet" type="text/css" href="/client/game.css" />
+  <head>
+    <script type="module" src="/client/scripts/script.js"></script>
+  </head>
+  <body>
+    <div class="frame">
+      
+      <div class="corner_topleft"></div>
+      <div class="corner_topright"></div>
+      <div class="corner_bottomleft"></div>
+      <div class="corner_bottomright"></div>
+
+      
+        <div class="camera">
+          <div class="map pixel-art">
+            <!--<div class="character" facing="down" walking="true">
+              <div class="shadow pixel-art"></div>
+              <div class="character_spritesheet pixel-art"></div>
+            </div>-->
+          </div>
+        
+          <div class="dpad">
+            <div class="DemoDirectionUI flex-center">
+              <button class="dpad-button dpad-left">
+                  <img src="./client/imgs/ArrowLeft.png"></img>
+              </button>
+              <button class="dpad-button dpad-up">
+                <img src="./client/imgs/ArrowUp.png"></img>
+              </button>
+              <button class="dpad-button dpad-down">
+                <img src="./client/imgs/ArrowDown.png"></img>
+              </button>
+              <button class="dpad-button dpad-right">
+                <img src="./client/imgs/ArrowRight.png"></img>
+              </button>
+            </div>
+          </div>
+      
+          <div class="apad">
+            <div class="DemoDirectionUI flex-center">
+              <button class="dpad-button apad-star">
+                  <img src="./client/imgs/Star.png"></img>
+              </button>
+              <button class="apad-button apad-lighting">
+                <img src="./client/imgs/Lighting.png"></img>
+              </button>
+              <button class="apad-button apad-water">
+                <img src="./client/imgs/Water.png"></img>
+              </button>
+              <button class="apad-button apad-tree">
+                <img src="./client/imgs/Tree.png"></img>
+              </button>
+            </div>
+          </div>
+          <div class="panel-div">
+            <div class="player-list-box">
+              <div class="list-title">Jugadores</div>
+              <div id="player-list">
+                  --
+              </div>
+            </div>
+            <div class="chat" id="chat">
+              <div id="chat-text">Chat</div>
+              <form id="chat-form">
+                  <input id="chat-input" type="text"/>
+              </form>
+            </div>
+            <div class="extrabuttons">
+              <div id="timeStamp"> Tiempo: </div>
+              <button id="kms-button">K</button>
+              <button id="revive-button">R</button>
+            </div> 
+          </div>
+        </div>
+    </div>
+
+    <div class="signDiv">
+      <div class="loginTitle">Login</div>
+      <input id="signDiv-user" type="text" placeholder="Usuario"/>
+      <br />
+      <input id="signDiv-pass" type="text" placeholder="Contraseña"/>
+      <br />
+      <br />
+      <button class="button" id="signDiv-signIn">Sign In</button>
+      <button class="button" id="signDiv-signUp">Sign Up</button>
+    </div>
+
+    <div class="menu-select-char">
+      <div class="select-buttons">
+        <button id="char1" class="char-select-button" >
+        <img
+          src="/client/sprites/tyler1-select.png"
+          alt="char"
+        />
+        <br />Personaje 1
+        </button>
+        <button id="char2" class="char-select-button" onclick="UpdateCharModel('taeyeon')">
+        <img
+          src="/client/sprites/taeyeon-select.png"
+          alt="char"
+        />
+        <br />Personaje 2
+        </button>
+        <button id="char3" class="char-select-button" onclick="UpdateCharModel('orge')">
+        <img
+          src="/client/sprites/orge-select.png"
+          alt="char"
+        />
+        <br />Personaje 3
+        </button>
+      </div>
+    </div>
+    
+  
+  </body>
+</html>
