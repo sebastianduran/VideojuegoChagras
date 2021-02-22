@@ -1,16 +1,13 @@
+[Probar](https://zyree.sse.codesandbox.io/)
 
+## Juego MMORPG
 
-[Multiplayer-Online-Game](https://mmorpg-ps-12345.herokuapp.com/)
+Basado en:
+Web aplication: [Wilshum](https://github.com/wilshum/Multiplayer-Online-Game)
 
-## Simple MMORPG game created using Node.js
+Movimientos: [Drew Conley](https://www.youtube.com/watch?v=H3Fn33lYuE0)
 
-Original from [Wilshum](https://github.com/wilshum/Multiplayer-Online-Game)
-
-This game used express as the web application framework, mongoDB as the database and also used socket.IO for real-time interactions between server and cilents. The application is deployed in Heroku using mongoDB database hosted on mLab, a cloud database service.
-
-The game requires the user to sign up with credentials which will be stored in the database. You can earn points by throwing energy balls against other players and try to earn the highest points!
-
-### Tools used:
+### Herramientas utilizadas:
 
 -NodeJS
 
@@ -26,10 +23,10 @@ The game requires the user to sign up with credentials which will be stored in t
 
 Run the following commands in your working directory:
 
-``` npm install ``` install dependencies in node_modules
+`npm install` install dependencies in node_modules
 
-``` grunt ``` grunt will generate the completeApp.js
+`grunt` grunt will generate the completeApp.js
 
-``` node completeApp.js ``` runs the application in localhost
+`node completeApp.js` runs the application in localhost
 
 ![alt tag](https://user-images.githubusercontent.com/11578999/39667207-849d5200-5065-11e8-98b8-d67c2dddfb8c.png)
